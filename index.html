@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>homework#7</title>
 
@@ -15,8 +16,8 @@
 
 </head>
 <body>
-    <header>
-        <div class="container">
+    <header class="container header">
+        <div class="link-page">
             <a href="#WEBSTUDIO"><span>WEB</span><span style="color: var(--NAVY-BLUE, #2E2F42);">STUDIO</span></a >
             <nav>
                 <ul class="link">
@@ -31,7 +32,7 @@
                     </li>
                 </ul>
             </nav>
-        </div>
+        <div>
             <ul class="link">
                 <li>
                     <a href="#info@devstudio.com" class="contact-link">info@devstudio.com</a>
@@ -39,9 +40,11 @@
                 <li>
                     <a href="#+11 (000) 111-11-11" class="contact-link">+11 (000) 111-11-11</a>
                 </li>
-            </ul> 
-    </header>   
-    <section>
+            </ul>
+        </div> 
+    </header>  
+
+    <main>
         <section class="hero">
         <h1 class="main-heading"> Effective Solutions <br>for Your Business <br/>
             <button type="button" class="button-btn" data-modal-open="">Order Service</button></h1>
@@ -94,8 +97,8 @@
             </div>
         </section>
 
-        <section class="about-feature">
-            <ul>
+        <section class="container about-feature">
+            <ul class="list">
                 <li class="feature">
                     <div class="about-icon">
                         <svg width="64" height="64">
@@ -136,14 +139,14 @@
             </ul>
         </section>
     <h2 class="what-are-we-doing">What Are We Doing</h2>
-            <ul>
+            <ul class="container wawd">
                 <li  class="image1-src"><img src="images/macmonitor.jpg" width="360"/></li>
                 <li  class="image2-src"><img src="images/cellphone.jpg" width="360"/></li>
                 <li  class="image3-src"><img src="images/phonelaptop.jpg" width="360"/></li>
             </ul>
-    <section class="section3">
+    <section class="container section3">
     <h2 class="sec3-title">Our Team</h2>
-            <ul>
+            <ul class="ul">
                 <div class="team-card">
                     <li class="card-content"><img src="images/markguerrero.jpg" width="264"/></li>
                         <h3 class="name-card"><b>Mark Guererro</b></h3>
@@ -256,7 +259,7 @@
     </section>    
             <section class="clients">
                 <h2 class="section-title">Customers</h2>
-                <ul class="list">
+                <ul class="container list">
                     <li class="client-icon">
                         <a href="#">
                             <svg width="104" height="56">
@@ -301,7 +304,7 @@
             </section>
 
     </main>
-    <footer>
+    <footer class="container footer">
         <section class="footer-bg">
             <div class="footer-logo">
                 <a href="#WEBSTUDIO"><span>WEB</span><span style="color: #F4F4FD;">STUDIO</span></a>

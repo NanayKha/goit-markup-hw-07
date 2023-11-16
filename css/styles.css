@@ -1,12 +1,21 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
 a[href="#WEBSTUDIO"] span,
 a[href="#WEBSTUDIO"] {
     color: var(--IRIS, #4D5AE5);
     font-family: 'Raleway'; sans-serif;
     font-size: 18px;
     font-weight: 800;
-    text-decoration: none;
     line-height: 1.17; /* 116.667% */
-    /*gap: 76px;*/
+    gap: 76px;
 }
 
 /*GENERAL TOPLINE*/
@@ -61,7 +70,7 @@ a[href="#WEBSTUDIO"] {
     line-height: 1.5;
     text-decoration: none;
     letter-spacing: 0.32px;
-    margin-left: 40px;
+    margin-left: 40px;*/
 }
 
 .contact-link:hover,
@@ -69,24 +78,31 @@ a[href="#WEBSTUDIO"] {
     color: var(--OCEAN, #404BBF);
 }
 
-header {
+.header {
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
     background: var(--WHITE, #FFF);
     /*width: 1440px;*/
     height: 72px;
     flex-shrink: 0;
     display: flex;
-    /*justify-content: space-around;*/
+    justify-content: space-around;
     align-items: center;
-    padding-left: 156px;
+    /*padding-left: 156px;*/
   }
 
-div.container {
+.link-page {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 24px;
-    /*gap: 40px;*/
+    gap: 40px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
@@ -214,7 +230,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;*/
-    width: 1440px;
+    /*width: 1440px;*/
     /*height: 2592px;*/
 }
 
@@ -222,7 +238,7 @@ ul {
     list-style: none;
     display: flex;
     margin-left: 0;
-    padding-inline-start: 156px;
+    /*padding-inline-start: 156px;*/
     /*default padding-inline-start 40px - adjusted to 0 to fit the 1440 width*/
 }
 
@@ -265,7 +281,7 @@ ul {
 .hero {
     background: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url("../images/people-office\ 1.jpg") ;
     background-size: cover;
-    width: 1440px;
+    /*width: 1440px;*/
     height: 600px;
     gap: 48px;
 }
@@ -281,13 +297,15 @@ ul {
     font-weight: 700;
     line-height: 60px; /* 107.143% */
     letter-spacing: 1.12px;
-    width: 1440px;
+    /*width: 1440px;*/
     padding-top: 188px;
     padding-bottom: 292px;
     margin: 0;
 }
 
 .button-btn {
+    width: 169px;
+    height: 56px;
     padding: 16px ;
     margin-top: 50px;
     color: var(--WHITE, #FFF);
@@ -310,7 +328,7 @@ ul {
 }
 
 .backdrop {
-    width: 1440px;
+    /*width: 1440px;*/
     height: 100%;
     background: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
     position: fixed;
@@ -351,7 +369,7 @@ ul {
     margin-left: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.10);
     cursor: pointer; 
@@ -462,7 +480,9 @@ ul {
 }
 
 .modal-send {
-    margin-top: 15px;
+    width: 169px;
+    height: 56px;;
+    /*margin-top: 15px;*/
     padding: 16px 32px;
     color: white;
     border-color: transparent;
@@ -480,7 +500,7 @@ ul {
 /*END OF HERO*/
 .section3 {
     background: var(--CLOUD, #F4F4FD);
-    width: 1440px;
+    /*width: 1440px;*/
     height: 780px;
 }
 
@@ -506,8 +526,8 @@ h2.sec3-title {
     flex-direction: column;
     /*justify-content: center;*/
     /*align-items: center;*/
-    margin-right: 24px;
-    /*margin-left: 24px;*/
+    /*margin-right: 24px;*/
+    margin-left: 24px;
     border-radius: 0px 0px 4px 4px;
     background: var(--WHITE, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -627,7 +647,7 @@ p {
 }
 
 .clients {
-    margin-buttom: 120px;
+    margin-bottom: 120px;
 }
 
 .list {
@@ -712,7 +732,7 @@ button {
 
 .body2 {
     background: #FFF;
-    width: 1440px;
+    /*width: 1440px;
     /*height: 2076px;*/
 }
 
@@ -776,6 +796,45 @@ button {
     opacity: 0;
     transform: translateY(100%);
     transition: transform  0.25s cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 /*END OF PORTFOLIO*/
+
+/* CSS MEDIA */
+
+@media (min-width: 428px) {
+    .container {
+        width: 428px;
+    } 
+
+    .list {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 768px) {
+    .contaner { 
+        width: 768px;
+    }
+
+   .about-feature {
+        flex-basis: calc(100% / 2 - 30px)
+    }
+
+    .list {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+
+    .about-feature {
+        flex-basis: calc(100% / 4 - 30px)
+}
+
+    .list {
+        flex-wrap: wrap;
+    }
+}

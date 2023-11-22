@@ -33,7 +33,7 @@
                 </ul>
             </nav>
         </div>
-        <div>
+        <div class="link-wrap">
             <ul class="link">
                 <li>
                     <a href="#info@devstudio.com" class="contact-link">info@devstudio.com</a>
@@ -139,12 +139,14 @@
                 </li>
             </ul>
         </section>
-    <h2 class="what-are-we-doing">What Are We Doing</h2>
-            <ul class="container wawd">
-                <li  class="image1-src"><img src="images/macmonitor.jpg" width="360"/></li>
-                <li  class="image2-src"><img src="images/cellphone.jpg" width="360"/></li>
-                <li  class="image3-src"><img src="images/phonelaptop.jpg" width="360"/></li>
-            </ul>
+    <section class="hidden-section">
+        <h2 class="what-are-we-doing">What Are We Doing</h2>
+                <ul class="container wawd">
+                    <li  class="image1-src"><img src="images/macmonitor.jpg" width="360"/></li>
+                    <li  class="image2-src"><img src="images/cellphone.jpg" width="360"/></li>
+                    <li  class="image3-src"><img src="images/phonelaptop.jpg" width="360"/></li>
+                </ul>
+    </section>
     <section class="container section3">
     <h2 class="sec3-title">Our Team</h2>
             <ul class="ul-team">
@@ -307,49 +309,59 @@
 
     <footer class="footer">
         <div class="container div-footer">
-            <div class="footer-logo">
-                <a href="#WEBSTUDIO"><span>WEB</span><span style="color: #F4F4FD;">STUDIO</span></a>
-                <p class="footer-txt">Increase the flow of customer and<br>sales for your business with digital<br>marketing & growth solution</p>
-            </div> 
-            <div class="footer-socials">
-                <h2 class="footer-social-media">Social Media</h2>
+            <div class="footer-gchild">
+                <div class="footer-logo">
+                    <a href="#WEBSTUDIO"><span>WEB</span><span style="color: #F4F4FD;">STUDIO</span></a>
+                    <p class="footer-txt">Increase the flow of customer and<br>sales for your business with digital<br>marketing & growth solution</p>
+                </div> 
+                <div class="footer-socials">
+                    <p class="footer-social-media">Social Media</p>
                     <div class="socialmedia-item">
-                    <a class="footer-socials-icon">
-                        <svg width="16" height="16">
-                            <use href="./images/icons.svg#instagram-2"></use>
-                        </svg>
-                    </a>
-                    <a class="footer-socials-icon">
-                        <svg width="16" height="16">
-                            <use href="./images/icons.svg#twitter-1"></use>
-                        </svg>
-                    </a>
-                    <a class="footer-socials-icon">
-                        <svg width="16" height="16">
-                            <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                    </a>
-                    <a class="footer-socials-icon">
-                        <svg width="16" height="16">
-                            <use href="./images/icons.svg#linkedin-1"></use>
-                        </svg>
-                    </a>
+                        <a class="footer-socials-icon">
+                            <svg width="16" height="16">
+                                <use href="./images/icons.svg#instagram-2"></use>
+                            </svg>
+                        </a>
+                        <a class="footer-socials-icon">
+                            <svg width="16" height="16">
+                                <use href="./images/icons.svg#twitter-1"></use>
+                            </svg>
+                        </a>
+                        <a class="footer-socials-icon">
+                            <svg width="16" height="16">
+                                <use href="./images/icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="footer-socials-icon">
+                            <svg width="16" height="16">
+                                <use href="./images/icons.svg#linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </div> 
+                </div>
+                <div class="footer-sub">
+                    <p class="footer-subscribe-text">Subscribe</p>
+                    <form class="form">
+                        <input type="text" placeholder="Email" class="input-sub" />
+                        <button class="btn-sub">
+                            Subscribe
+                            <svg width="24" height="24">
+                                <use href="./images/icons.svg#send"></use>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
-        <div class="footer-sub">
-            <p class="footer-subscribe-text">Subscribe</p>
-            <form>
-                <input type="text" placeholder="Email" class="input-sub" />
-                <button class="btn-sub">
-                    Subscribe
-                    <svg width="24" height="24">
-                        <use href="./images/icons.svg#send"></use>
-                    </svg>
-                </button>
-            </form>
         </div>
-    </div>
     </footer> 
-    <script src="./js/modal.js" type="text/javascript"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    
 </body>
 </html>

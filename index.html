@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/styles.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+            integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
 
         <title>homework#7</title>
-
     </head>
     <body>
         <!--Desktop menu-->
-        <header class="container header">
-            <div class="link-page">
-                <a href="#WEBSTUDIO"><span>WEB</span><span style="color: var(--NAVY-BLUE, #2E2F42);">STUDIO</span></a >
-                <nav>
-                    <ul class="link">
-                        <li>
-                            <a href="index.html" class="main-link active">Studio</a>
-                        </li>
-                        <li>
-                            <a href="portfolio.html" class="main-link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#Contacts" class="main-link">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="link-wrap">
+        <header class="header desktop-nav">
+            <div class="container header-container">
+                <div class="link-page">
+                    <a href="#WEBSTUDIO"><span>WEB</span><span style="color: var(--NAVY-BLUE, #2e2f42)">STUDIO</span></a>
+                    <nav>
+                        <ul class="link">
+                            <li>
+                                <a href="index.html" class="main-link active">Studio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html" class="main-link">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#Contacts" class="main-link">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 <ul class="link-info">
                     <li>
                         <a href="#info@devstudio.com" class="contact-link">info@devstudio.com</a>
@@ -40,23 +44,76 @@
                         <a href="#+11 (000) 111-11-11" class="contact-link">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
-            </div> 
+            </div>
         </header>
 
-        <header class="mobile-menu">
+        <header class="mobile-nav">
             <div class="container mobile-container">
-                <a href="#WEBSTUDIO"><span>WEB</span><span style="color: var(--NAVY-BLUE, #2E2F42);">STUDIO</span></a >
+                <a href="#WEBSTUDIO"><span>WEB</span><span style="color: var(--NAVY-BLUE, #2e2f42)">STUDIO</span></a>
                 <svg width="32" height="22" class="js-open-menu">
                     <use href="./images/icons.svg#hamburger"></use>
                 </svg>
             </div>
         </header>
 
-        
+        <div class="js-menu-container mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-container">
+                <button class="js-close-menu">x</button>
+                <nav class="mobile-navbar">
+                    <ul class="mobile-links">
+                        <li>
+                            <a class="mobile-link active" href="">Studio</a>
+                        </li>
+                        <li>
+                            <a class="mobile-link" href="">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="mobile-link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <ul class="mobile-links">
+                            <li>
+                                <a class="mobile-contact active" href="">11 (000) 111-11-11</a>
+                            </li>
+                            <li>
+                                <a href="" class="mobile-contact">info@devstudio.com</a>
+                            </li>
+                        </ul>
+
+                        <div class="team-socials">
+                            <a class="team-socials-icon">
+                                <svg width="16" height="16">
+                                    <use href="./images/icons.svg#instagram-2"></use>
+                                </svg>
+                            </a>
+                            <a class="team-socials-icon">
+                                <svg width="16" height="16">
+                                    <use href="./images/icons.svg#twitter-1"></use>
+                                </svg>
+                            </a>
+                            <a class="team-socials-icon">
+                                <svg width="16" height="16">
+                                    <use href="./images/icons.svg#linkedin-1"></use>
+                                </svg>
+                            </a>
+                            <a class="team-socials-icon">
+                                <svg width="16" height="16">
+                                    <use href="./images/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
         <main>
             <section class="hero">
-            <h1 class="main-heading"> Effective Solutions <br>for Your Business <br/>
-                <button type="button" class="button-btn" data-modal-open="">Order Service</button></h1>
+                <h1 class="main-heading">
+                    Effective Solutions <br />for Your Business <br />
+                    <button type="button" class="button-btn" data-modal-open="">Order Service</button>
+                </h1>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                         <button class="modal-close-btn" data-modal-close>&times;</button>
@@ -115,8 +172,7 @@
                             </svg>
                         </div>
                         <h3>Strategy</h3>
-                        <p class="feature-txt">Our goal is to identify the business
-                        problem to walk away with the perfect and creative solution. </p>
+                        <p class="feature-txt">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
                     </li>
                     <li class="feature">
                         <div class="about-icon">
@@ -125,7 +181,7 @@
                             </svg>
                         </div>
                         <h3>Punctuality</h3>
-                        <p class="feature-txt">Bring the key message to the brand's audience for the best price within the shortest possible time. </p>
+                        <p class="feature-txt">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
                     </li>
                     <li class="feature">
                         <div class="about-icon">
@@ -134,7 +190,9 @@
                             </svg>
                         </div>
                         <h3>Diligence</h3>
-                        <p class="feature-txt">Research and confirm brands that present the strongest digital growth opportunities and minimize risk. </p>
+                        <p class="feature-txt">
+                            Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
+                        </p>
                     </li>
                     <li class="feature">
                         <div class="about-icon">
@@ -143,23 +201,24 @@
                             </svg>
                         </div>
                         <h3>Technologies</h3>
-                        <p class="feature-txt">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving. </p>
+                        <p class="feature-txt">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                     </li>
                 </ul>
             </section>
-        <section class="hidden-section">
-            <h2 class="what-are-we-doing">What Are We Doing</h2>
-                    <ul class="container wawd">
-                        <li  class="image1-src"><img src="images/macmonitor.jpg" width="360"/></li>
-                        <li  class="image2-src"><img src="images/cellphone.jpg" width="360"/></li>
-                        <li  class="image3-src"><img src="images/phonelaptop.jpg" width="360"/></li>
-                    </ul>
-        </section>
-        <section class="container section3">
-        <h2 class="sec3-title">Our Team</h2>
-                <ul class="ul-team">
-                    <div class="team-card">
-                        <li class="card-content"><img src="images/markguerrero.jpg" width="264"/></li>
+            <section class="hidden-section">
+                <h2 class="what-are-we-doing">What Are We Doing</h2>
+                <ul class="container wawd">
+                    <li class="image1-src"><img src="images/macmonitor.jpg" width="360" /></li>
+                    <li class="image2-src"><img src="images/cellphone.jpg" width="360" /></li>
+                    <li class="image3-src"><img src="images/phonelaptop.jpg" width="360" /></li>
+                </ul>
+            </section>
+            <section class="section3">
+                <div class="container">
+                    <h2 class="sec3-title">Our Team</h2>
+                    <ul class="ul-team">
+                        <div class="team-card">
+                            <li class="card-content"><img src="images/markguerrero.jpg" width="264" /></li>
                             <h3 class="name-card"><b>Mark Guererro</b></h3>
                             <p class="title-card">Product Designer</p>
                             <div class="team-socials">
@@ -184,9 +243,9 @@
                                     </svg>
                                 </a>
                             </div>
-                    </div>
-                    <div class="team-card">
-                    <li class="card-content"><img src="images/tomford.jpg" widt  nh="264"/></li>
+                        </div>
+                        <div class="team-card">
+                            <li class="card-content"><img src="images/tomford.jpg" widt nh="264" /></li>
                             <h3 class="name-card"><b>Tom Ford</b></h3>
                             <p class="title-card">Frontend Developer</p>
                             <div class="team-socials">
@@ -211,9 +270,9 @@
                                     </svg>
                                 </a>
                             </div>
-                    </div>
-                    <div class="team-card">
-                    <li class="card-content"><img src="images/camilagarcia.jpg" width="264"/></li>
+                        </div>
+                        <div class="team-card">
+                            <li class="card-content"><img src="images/camilagarcia.jpg" width="264" /></li>
                             <h3 class="name-card"><b>Camila Garcia</b></h3>
                             <p class="title-card">Marketing</p>
                             <div class="team-socials">
@@ -238,9 +297,9 @@
                                     </svg>
                                 </a>
                             </div>
-                    </div>
-                    <div class="team-card">
-                    <li class="card-content"><img src="images/danielwilson.jpg" width="264"/></li>
+                        </div>
+                        <div class="team-card">
+                            <li class="card-content"><img src="images/danielwilson.jpg" width="264" /></li>
                             <h3 class="name-card"><b>Daniel Wilson</b></h3>
                             <p class="title-card">UI Designer</p>
                             <div class="team-socials">
@@ -265,63 +324,69 @@
                                     </svg>
                                 </a>
                             </div>
-                    </div>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+            <section class="container clients">
+                <h2 class="section-title">Customers</h2>
+                <ul class="list">
+                    <li class="client-icon">
+                        <a href="#">
+                            <svg width="104" height="56">
+                                <use href="./images/icons.svg#Logo-6"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client-icon">
+                        <a href="#">
+                            <svg width="104" height="56">
+                                <use href="./images/icons.svg#Logo-4"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="client-icon">
+                        <a href="#">
+                            <svg width="104" height="56">
+                                <use href="./images/icons.svg#Logo-3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client-icon">
+                        <a href="#">
+                            <svg width="104" height="56">
+                                <use href="./images/icons.svg#Logo-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client-icon">
+                        <a href="#">
+                            <svg width="104" height="56">
+                                <use href="./images/icons.svg#Logo"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="client-icon">
+                        <a href="#">
+                            <svg width="104" height="56">
+                                <use href="./images/icons.svg#Logo-1"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-        </section>    
-                <section class="container clients">
-                    <h2 class="section-title">Customers</h2>
-                    <ul class="list">
-                        <li class="client-icon">
-                            <a href="#">
-                                <svg width="104" height="56">
-                                    <use href="./images/icons.svg#Logo-6"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="client-icon">
-                            <a href="#">
-                                <svg width="104" height="56">
-                                    <use href="./images/icons.svg#Logo-4"></use>
-                                </svg>
-                            </a>
-                        <li class="client-icon">
-                            <a href="#">
-                                <svg width="104" height="56">
-                                    <use href="./images/icons.svg#Logo-3"></use>
-                                </svg>
-                            </a>
-                        </li> 
-                        <li class="client-icon">
-                            <a href="#">
-                                <svg width="104" height="56">
-                                    <use href="./images/icons.svg#Logo-2"></use>
-                                </svg>
-                            </a>
-                        </li> 
-                        <li class="client-icon">
-                            <a href="#">
-                                <svg width="104" height="56">
-                                    <use href="./images/icons.svg#Logo"></use>
-                                </svg>
-                            </a>
-                        </li> 
-                        <li class="client-icon">
-                            <a href="#">
-                                <svg width="104" height="56">
-                                    <use href="./images/icons.svg#Logo-1"></use>
-                                </svg>
-                            </a>
-                        </li>                              
-                </section>
+            </section>
         </main>
 
         <footer class="footer">
             <div class="container div-footer">
                 <div class="footer-gchild">
                     <div class="footer-logo">
-                        <a href="#WEBSTUDIO"><span>WEB</span><span style="color: #F4F4FD;">STUDIO</span></a>
-                        <p class="footer-txt">Increase the flow of customer and<br>sales for your business with digital<br>marketing & growth solution</p>
-                    </div> 
+                        <a href="#WEBSTUDIO"><span>WEB</span><span style="color: #f4f4fd">STUDIO</span></a>
+                        <p class="footer-txt">
+                            Increase the flow of customer and<br />sales for your business with digital<br />marketing & growth solution
+                        </p>
+                    </div>
                     <div class="footer-socials">
                         <p class="footer-social-media">Social Media</p>
                         <div class="socialmedia-item">
@@ -345,7 +410,7 @@
                                     <use href="./images/icons.svg#linkedin-1"></use>
                                 </svg>
                             </a>
-                        </div> 
+                        </div>
                     </div>
                     <div class="footer-sub">
                         <p class="footer-subscribe-text">Subscribe</p>
@@ -361,13 +426,13 @@
                     </div>
                 </div>
             </div>
-        </footer> 
+        </footer>
         <script
-        defer
-        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"></script>
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
         <script type="text/javascript" src="./js/mobile-menu.js"></script>
-        <script type="text/javascript" src="./js/modal.js"></script>  
+        <script type="text/javascript" src="./js/modal.js"></script>
     </body>
 </html>

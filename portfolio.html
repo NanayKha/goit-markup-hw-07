@@ -13,24 +13,24 @@
 
     </head>
     <body class="body2">
-        <header class="container header">
-            <div class="link-page">
-                <a href="#WEBSTUDIO"><span>WEB</span><span style="color: var(--NAVY-BLUE, #2E2F42);">STUDIO</span></a >
-                <nav>
-                    <ul class="link">
-                        <li>
-                            <a href="index.html" class="main-link ">Studio</a>
-                        </li>
-                        <li>
-                            <a href="portfolio.html" class="main-link active">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#Contacts" class="main-link">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="link-wrap">
+        <header class="header desktop-nav">
+            <div class="container header-container">
+                <div class="link-page">
+                    <a href="#WEBSTUDIO"><span>WEB</span><span style="color: var(--NAVY-BLUE, #2e2f42)">STUDIO</span></a>
+                    <nav>
+                        <ul class="link">
+                            <li>
+                                <a href="index.html" class="main-link">Studio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html" class="main-link active">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#Contacts" class="main-link">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 <ul class="link-info">
                     <li>
                         <a href="#info@devstudio.com" class="contact-link">info@devstudio.com</a>
@@ -39,8 +39,69 @@
                         <a href="#+11 (000) 111-11-11" class="contact-link">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
-            </div> 
-        </header>  
+            </div>
+        </header>
+
+        <header class="mobile-nav">
+            <div class="container mobile-container">
+                <a href="#WEBSTUDIO"><span>WEB</span><span style="color: var(--NAVY-BLUE, #2e2f42)">STUDIO</span></a>
+                <svg width="32" height="22" class="js-open-menu">
+                    <use href="./images/icons.svg#hamburger"></use>
+                </svg>
+            </div>
+        </header>
+
+        <div class="js-menu-container mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-container">
+                <button class="js-close-menu">x</button>
+                <nav class="mobile-navbar">
+                    <ul class="mobile-links">
+                        <li>
+                            <a class="mobile-link" href="">Studio</a>
+                        </li>
+                        <li>
+                            <a class="mobile-link active" href="">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="mobile-link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <ul class="mobile-links">
+                            <li>
+                                <a class="mobile-contact active" href="">11 (000) 111-11-11</a>
+                            </li>
+                            <li>
+                                <a href="" class="mobile-contact">info@devstudio.com</a>
+                            </li>
+                        </ul>
+
+                        <div class="team-socials">
+                            <a class="team-socials-icon">
+                                <svg width="16" height="16">
+                                    <use href="./images/icons.svg#instagram-2"></use>
+                                </svg>
+                            </a>
+                            <a class="team-socials-icon">
+                                <svg width="16" height="16">
+                                    <use href="./images/icons.svg#twitter-1"></use>
+                                </svg>
+                            </a>
+                            <a class="team-socials-icon">
+                                <svg width="16" height="16">
+                                    <use href="./images/icons.svg#linkedin-1"></use>
+                                </svg>
+                            </a>
+                            <a class="team-socials-icon">
+                                <svg width="16" height="16">
+                                    <use href="./images/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
 
         
         <main >

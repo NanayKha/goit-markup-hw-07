@@ -909,10 +909,6 @@ button {
 }
 
 @media (max-width: 768px) {
-    .footer-gchild {
-        /* padding-left: 108px; */
-        /*padding-right: 108px;*/
-    }
 
     .mobile-menu.is-open {
         transform: translateX(0);

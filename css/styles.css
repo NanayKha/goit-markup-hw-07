@@ -20,7 +20,8 @@ a[href="#WEBSTUDIO"] {
 
 /*GENERAL TOPLINE*/
 
-.link {
+.link,
+.link-wrap {
     font-family: Roboto;
     font-size: 16px;
     gap: 40px;
@@ -28,6 +29,11 @@ a[href="#WEBSTUDIO"] {
     text-decoration: none;
     letter-spacing: 0.32px;
     padding-left: 76px;
+}
+
+
+.link-info {
+    gap:40px
 }
 
 .main-link {
@@ -68,6 +74,8 @@ a[href="#WEBSTUDIO"] {
     text-decoration: none;
     letter-spacing: 0.32px;
 }
+
+
 
 .contact-link:hover,
 .contact-link:focus {
@@ -273,6 +281,7 @@ ul {
     padding-top: 188px;
     padding-bottom: 292px;
     margin: 0;
+    text-transform: capitalize ;
 }
 
 .button-btn {
@@ -601,6 +610,7 @@ p {
 }
 
 .list {
+
     gap: 24px;
     /*margin-bottom: 120px;*/
 }
@@ -754,7 +764,8 @@ button {
     } 
 
     .list,
-    .ul-team {
+    .ul-team,
+    .divproject{
         flex-wrap: wrap;
     }
 }
@@ -767,14 +778,16 @@ button {
    .feature,
    .team-card,
    .footer-gchild,
-   .link-wrap{
+   .link-wrap,
+   .team-card2 {
         flex-basis: calc(100% / 2 - 30px);
     }
 
     .list,
     .ul-team,
     .footer-gchild,
-    .link-wrap {
+    .link-wrap,
+    .divproject{
         flex-wrap: wrap;
     }
 }
@@ -786,19 +799,25 @@ button {
 
     .feature,
     .team-card,
-    .footer-gchild {
+    .footer-gchild,
+    .team-card2{
         flex-basis: calc(100% / 4 - 30px)
 }
 
     .list,
     .ul-team,
-    .footer-gchild {
+    .footer-gchild,
+    .divproject{
         flex-wrap: wrap;
+    }
+
+    .mobile-container {
+        display: none;
     }
 } 
 
 @media (max-width: 768px) {
-    .footer-gchild,{
+    .footer-gchild {
         padding-left: 108px;
         /*padding-right: 108px;*/
     }
@@ -811,21 +830,32 @@ button {
         row-gap:64px;
     }
 
-    .footer-sub{
-      
+    .about-icon {
+        display: none;
     }
+
+    .feature h3 {
+        font-size: 36px;
+    }
+
+    .projectcardsection{
+        flex-wrap: wrap;
+    }
+    
 }
 
 @media (max-width: 428px) {
-    .footer-gchild,
     .ul-team,
     .client,
-    .section-title {
+    .footer-gchild,
+    .section-title,
+    .feature-txt,
+    .feature h3 {
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left: 0;
+       padding-left: 0;
     }
     
     .hidden-section {
@@ -834,5 +864,14 @@ button {
 
     .input-sub {
         margin-right: 0;
+    }
+
+    .divproject{
+        display: block;
+    }
+
+    .main-heading {
+        font-size: 36px;
+
     }
 }
